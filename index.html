@@ -4,44 +4,34 @@
   <meta charset="utf-8" />
   <meta name="google" content="notranslate" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#f6eee4" />
   <title>Clica e Cozinha</title>
-  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="styles.css?v=12" />
   <link rel="icon" href="icon.svg" />
 </head>
 <body class="notranslate gated" translate="no">
   <div id="gate" class="gate" role="dialog" aria-modal="true" aria-labelledby="gateBrand">
-    <div class="gate-glow" aria-hidden="true"></div>
     <button class="gate-lang" type="button" data-act="lang" id="gateLang">ES</button>
     <div class="gate-inner">
-      <p class="gate-kicker" id="gateKicker">Culinária do mundo</p>
-      <div class="scene" aria-hidden="true">
-        <span class="steam s1"></span>
-        <span class="steam s2"></span>
-        <span class="steam s3"></span>
-        <svg class="pan-svg" viewBox="0 0 220 160" fill="none">
-          <ellipse cx="108" cy="128" rx="72" ry="10" fill="#2a0f07" opacity=".35"/>
-          <path d="M42 78c6 32 28 48 66 48s60-16 66-48" fill="#5c220f"/>
-          <ellipse cx="108" cy="78" rx="68" ry="22" fill="#9a3412"/>
-          <ellipse cx="108" cy="74" rx="58" ry="16" fill="#c2410c"/>
-          <ellipse cx="108" cy="70" rx="48" ry="11" fill="#fdba74" opacity=".55"/>
-          <path d="M174 74c28 4 42 18 38 28-4 10-22 12-38 8" stroke="#fbbf24" stroke-width="10" stroke-linecap="round"/>
-          <circle cx="214" cy="98" r="7" fill="#fde68a"/>
-          <path d="M96 52c2-14 10-22 18-22" stroke="#fed7aa" stroke-width="3" stroke-linecap="round" opacity=".8"/>
-        </svg>
-      </div>
+      <p class="gate-kicker">
+        <span class="orn" aria-hidden="true"></span>
+        <span id="gateKicker">Culinária do mundo</span>
+        <span class="orn" aria-hidden="true"></span>
+      </p>
+      <img class="gate-pot" src="img/splash-pot.png" alt="" />
       <h1 class="gate-title">
         <span id="gateLine">Clica e</span>
         <strong id="gateBrand">Cozinha</strong>
       </h1>
-      <p class="gate-lede" id="gateLede">Escolhe o país, a região e o prato. Ingredientes e passos estão aqui — sem YouTube.</p>
-      <ul class="gate-flags" aria-hidden="true">
-        <li><svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#009c3b"/><polygon points="15,2 28,10 15,18 2,10" fill="#ffdf00"/><circle cx="15" cy="10" r="4" fill="#002776"/></svg></li>
-        <li><svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#c60b1e"/><rect y="5" width="30" height="10" fill="#ffc400"/></svg></li>
-        <li><svg viewBox="0 0 30 20"><rect width="10" height="20" fill="#006847"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ce1126"/></svg></li>
-        <li><svg viewBox="0 0 30 20"><rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ce2b37"/></svg></li>
-        <li><svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="5.5" fill="#bc002d"/></svg></li>
-        <li><svg viewBox="0 0 30 20"><rect width="10" height="20" fill="#d91023"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#d91023"/></svg></li>
+      <p class="gate-sprig" aria-hidden="true"></p>
+      <p class="gate-lede" id="gateLede">Escolhe o país, a região e o prato. Ingredientes e passos, tudo num só lugar.</p>
+      <ul class="gate-flags">
+        <li data-c="br"><span class="flag-ico"><svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#009c3b"/><polygon points="15,2 28,10 15,18 2,10" fill="#ffdf00"/><circle cx="15" cy="10" r="4" fill="#002776"/></svg></span><span class="flag-name">Brasil</span></li>
+        <li data-c="es"><span class="flag-ico"><svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#c60b1e"/><rect y="5" width="30" height="10" fill="#ffc400"/></svg></span><span class="flag-name">Espanha</span></li>
+        <li data-c="mx"><span class="flag-ico"><svg viewBox="0 0 30 20"><rect width="10" height="20" fill="#006847"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ce1126"/></svg></span><span class="flag-name">México</span></li>
+        <li data-c="it"><span class="flag-ico"><svg viewBox="0 0 30 20"><rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ce2b37"/></svg></span><span class="flag-name">Itália</span></li>
+        <li data-c="jp"><span class="flag-ico"><svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="5.5" fill="#bc002d"/></svg></span><span class="flag-name">Japão</span></li>
+        <li data-c="pe"><span class="flag-ico"><svg viewBox="0 0 30 20"><rect width="10" height="20" fill="#d91023"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#d91023"/></svg></span><span class="flag-name">Peru</span></li>
       </ul>
       <button class="gate-cta" type="button" data-act="enter" id="gateEnter">Começar a cozinhar</button>
     </div>
@@ -50,7 +40,7 @@
 
   <div class="phone">
     <header class="top">
-      <a class="brand-chip" href="#inicio">
+      <a class="brand-chip" href="#inicio" data-act="splash">
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><ellipse cx="12" cy="12" rx="4" ry="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M5 8h14M5 16h14" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
         <span id="brandChip">Clica e Cozinha · Mundo</span>
       </a>
@@ -61,6 +51,10 @@
         <button class="icon-btn lang-btn" type="button" data-act="lang" id="langBtn">ES</button>
       </div>
     </header>
+    <div id="syncBanner" class="sync-banner" hidden>
+      <p id="syncBannerText"></p>
+      <button type="button" data-act="sync-banner" id="syncBannerBtn"></button>
+    </div>
     <main id="view"></main>
     <nav class="tabs" id="tabs">
       <a href="#inicio" data-tab="inicio">
@@ -81,7 +75,28 @@
       </a>
     </nav>
   </div>
-  <script src="recipes.js?v=7"></script>
-  <script src="app.js?v=7"></script>
+  <div id="syncHostSheet" class="sync-sheet" hidden>
+    <div class="sync-card">
+      <h2 id="syncHostTitle">Escrever neste computador</h2>
+      <p id="syncHostLead"></p>
+      <p class="sync-code" id="syncHostSheetCode">—</p>
+      <p class="sync-status" id="syncHostSheetStatus"></p>
+      <p class="meta" id="syncHostWifi"></p>
+      <button class="btn ghost" type="button" data-act="sync-host-close" id="syncHostClose">Voltar</button>
+    </div>
+  </div>
+  <div id="syncAuthSheet" class="sync-sheet" hidden>
+    <div class="sync-card">
+      <h2 id="syncAuthTitle">Permitir este computador?</h2>
+      <p id="syncAuthLead"></p>
+      <div class="actions">
+        <button class="btn ghost" type="button" data-act="sync-deny" id="syncDenyBtn">Recusar</button>
+        <button class="btn" type="button" data-act="sync-allow" id="syncAllowBtn">Permitir</button>
+      </div>
+    </div>
+  </div>
+  <div id="toast" class="toast" hidden></div>
+  <script src="recipes.js?v=12"></script>
+  <script src="app.js?v=12"></script>
 </body>
 </html>
